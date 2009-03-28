@@ -1,0 +1,2 @@
+./wanem.sh
+exit

@@ -1,0 +1,8 @@
+#!/usr/bin/expect
+spawn passwd
+set p [lindex $argv 0]
+expect "Enter new UNIX password:\r"
+send "$p\r"
+expect "Retype new UNIX password:\r"
+send "$p\r"
+expect eof
